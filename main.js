@@ -21,6 +21,6 @@ btn.addEventListener('click', function(){
             })
             newElementH3.append(h3TextNode);
 
-            display.append(newElementH3, newElementP, 'dodany tekst');
+            display.append(newElementH3, newElement, 'dodany tekst');
             i++;
 })
