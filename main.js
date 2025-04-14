@@ -9,10 +9,14 @@ btn.addEventListener('click', function(){
 
 
     const newElementH3 = document.createElement('h3');
-            newElementH3.style.color.backgroundColor = '#ff0';
-            const h3TextNode = document.createTextNode('Jakiś tytuł');
+    newElementH3.style.color.backgroundColor = '#ff0';
+    const h3TextNode = document.createTextNode('Jakiś tytuł');
+    newElementH3.addEventListener('click', function (evt){
+        console.log(this);
+        this.remove()
+    })
+    newElementH3.append(h3TextNode);
 
-            newElementH3.append(h3TextNode);
-
-            display.append(newElementH3, newElementP, 'dodany tekst');
+    display.append(newElementH3, newElementP, 'dodany tekst');
+    i++;
 })
